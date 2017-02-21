@@ -4,7 +4,7 @@ defmodule Grokking.Search do
   """
 
   @spec binary([any], any) :: integer | nil
-  def binary(list, value) when is_list(list) do
+  def binary(list, value) do
     binary(List.to_tuple(list), value, 0, length(list) - 1)
   end
 
