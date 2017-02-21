@@ -23,5 +23,4 @@ defmodule Grokking.Search do
         binary(tuple, value, mid + 1, high)
     end
   end
-
 end

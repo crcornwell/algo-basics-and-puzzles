@@ -1,5 +1,4 @@
 defmodule Grokking.SearchTest do
-
   alias Grokking.Search
   use ExUnit.Case, async: true
 
@@ -15,7 +14,7 @@ defmodule Grokking.SearchTest do
 
   test "it should return a index for a value" do
     index = Search.binary(@list, 4867)
+    assert is_integer(index)
     assert Enum.at(@list, index) == 4867
   end
-
 end
