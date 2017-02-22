@@ -54,3 +54,8 @@ for item in myList {
 
 // Test for an item not in the list.
 recBinarySearch(ordered: myList, item: 4);
+
+func myFunction(addend x: Int) -> Int {
+    return x+1
+}
+myFunction(addend: 5)
