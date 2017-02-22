@@ -32,18 +32,13 @@ binarySearch(list: myList, item: 4);
 func recBinarySearch(ordered: ArraySlice<Int>, item: Int) -> Int? {
     let mid = ordered.count/2;
     let si = ordered.startIndex
-    ordered
-    item
-    mid
-    si
-    ordered[si+mid]
     if (ordered[si+mid] == item) {
         return si+mid;
     } else if (ordered.count == 1) {
         return nil;
     } else if (item < ordered[si+mid]) {
         return recBinarySearch(ordered: ordered[si+0...si+mid-1], item: item);
-    } else { // if (ordered[mid] < item)
+    } else {
         return recBinarySearch(ordered: ordered[si+mid+1...si+ordered.count-1], item: item);
     }
 }
