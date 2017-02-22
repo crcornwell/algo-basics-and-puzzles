@@ -28,3 +28,34 @@ for item in myList {
 
 // Test for an item not in the list.
 binarySearch(list: myList, item: 4);
+
+func recBinarySearch(ordered: ArraySlice<Int>, item: Int) -> Int? {
+    let mid = ordered.count/2;
+    let si = ordered.startIndex
+    ordered
+    item
+    mid
+    si
+    ordered[si+mid]
+    if (ordered[si+mid] == item) {
+        return si+mid;
+    } else if (ordered.count == 1) {
+        return nil;
+    } else if (item < ordered[si+mid]) {
+        return recBinarySearch(ordered: ordered[si+0...si+mid-1], item: item);
+    } else { // if (ordered[mid] < item)
+        return recBinarySearch(ordered: ordered[si+mid+1...si+ordered.count-1], item: item);
+    }
+}
+
+func recBinarySearch(ordered: Array<Int>, item: Int) -> Int? {
+    return recBinarySearch(ordered: ordered[0...ordered.count-1], item: item)
+}
+
+// Test for each item in the list
+for item in myList {
+    print(recBinarySearch(ordered: myList, item: item)!);
+}
+
+// Test for an item not in the list.
+recBinarySearch(ordered: myList, item: 4);
