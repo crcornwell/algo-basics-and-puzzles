@@ -1,0 +1,5 @@
+Exercise 2.1
+
+The obvious answer is to use a linked list, because the total run time of insertions for an array would be O(n^2), which sucks. But the total run time of the reads would also be O(n^2) for a linked list if you retrieve each item independently. So if you can traverse through the list and add its amount to your total without "losing your place," then the total cost of your reads (as a single lump read) is O(n).
+
+So the implementation of the summing at the end of the month is critical if you want to save time by using a linked list.

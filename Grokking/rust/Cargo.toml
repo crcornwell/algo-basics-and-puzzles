@@ -1,0 +1,6 @@
+[package]
+name = "grokking"
+version = "0.1.0"
+authors = ["Chris Cornwell <chris@citizennet.com>"]
+
+[dependencies]
