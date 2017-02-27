@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="API documentation for the Rust `bin_search` fn in crate `grokking`.">
-    <meta name="keywords" content="rust, rustlang, rust-lang, bin_search">
+    <meta name="description" content="API documentation for the Rust `grokking` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, grokking">
 
-    <title>grokking::binary_search::binary_search::bin_search - Rust</title>
+    <title>grokking - Rust</title>
 
-    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
-    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
-    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
     
 
     
@@ -29,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../../index.html'>grokking</a>::<wbr><a href='../index.html'>binary_search</a>::<wbr><a href='index.html'>binary_search</a></p><script>window.sidebarCurrent = {name: 'bin_search', ty: 'fn', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'grokking', ty: 'mod', relpath: '../'};</script>
     </nav>
 
     <nav class="sub">
@@ -43,13 +43,38 @@
         </form>
     </nav>
 
-    <section id='main' class="content fn">
-<h1 class='fqn'><span class='in-band'>Function <a href='../../index.html'>grokking</a>::<wbr><a href='../index.html'>binary_search</a>::<wbr><a href='index.html'>binary_search</a>::<wbr><a class='fn' href=''>bin_search</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>grokking</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a class='srclink' href='../../../src/grokking/binary_search.rs.html#2-4' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn bin_search&lt;T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html' title='trait core::cmp::PartialOrd'>PartialOrd</a>&gt;(list: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a>T<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>, element: T) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='enum core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt;</pre></section>
+               </span><a class='srclink' href='../src/grokking/lib.rs.html#1-6' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>The grokking crate is a collection of exersizes from the
+book <em>Grokking Algorithms</em> written in the Rust language.</p>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='binary_search/index.html'
+                                  title='mod grokking::binary_search'>binary_search</a></td>
+                           <td class='docblock-short'>
+                                <p>The binary_search module implements a binary search algorithm</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='quicksort/index.html'
+                                  title='mod grokking::quicksort'>quicksort</a></td>
+                           <td class='docblock-short'>
+                                <p>This module implements a basic quicksort. It feels memory inefficient
+but handing references back and forth started to get pretty complicated</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='selection_sort/index.html'
+                                  title='mod grokking::selection_sort'>selection_sort</a></td>
+                           <td class='docblock-short'>
+                                <p>Selection sort is a simple quadratic sorting algorithm</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -103,11 +128,11 @@
     
 
     <script>
-        window.rootPath = "../../../";
+        window.rootPath = "../";
         window.currentCrate = "grokking";
     </script>
-    <script src="../../../jquery.js"></script>
-    <script src="../../../main.js"></script>
-    <script defer src="../../../search-index.js"></script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>
